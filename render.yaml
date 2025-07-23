@@ -8,3 +8,4 @@ services:
     envVars:
       - key: GOOGLE_APPLICATION_CREDENTIALS
         value: firebase_config.json
+    
