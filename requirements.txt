@@ -9,3 +9,5 @@ xgboost==1.7.6
 joblib==1.2.0
 requests==2.31.0
 PyYAML==6.0
+setuptools>=65.0.0
+wheel
