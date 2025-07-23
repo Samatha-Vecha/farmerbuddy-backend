@@ -3,8 +3,8 @@ services:
     name: farmer-backend
     env: python
     rootDir: backend
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
+    buildCommand: "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
     envVars:
       - key: GOOGLE_APPLICATION_CREDENTIALS
         value: firebase_config.json
